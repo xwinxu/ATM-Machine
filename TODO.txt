@@ -1,0 +1,14 @@
+TODO:
+1) when a new user logs in for the first time, account info page should tell them to go request a new account instead
+of not displaying anything
+    -
+
+2) once a user/account is created, make sure it is removed from the list for the next time
+    - DONE
+
+3) Overseas account: display what type of currency it is in account info
+
+4) after a teller is promoted to manager, is it still a user? Right now its being stripped of its user abilities and
+just converted into a manager with no accounts at the bank
+
+5) request for a chequing account results in a request of credit account

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #031c44;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.admin.undoTransaction.DisplayTransactionsController">
+   <children>
+      <Pane fx:id="pane" layoutX="150.0" layoutY="142.0" prefHeight="400.0" prefWidth="600.0" />
+      <Button fx:id="confirmButton" focusTraversable="false" layoutX="553.0" layoutY="534.0" mnemonicParsing="false" onAction="#confirmUndo" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 15;" text="Confirm Accounts" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="250.0" layoutY="20.0" opacity="0.9" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <Text fill="WHITE" layoutX="70.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Transaction" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

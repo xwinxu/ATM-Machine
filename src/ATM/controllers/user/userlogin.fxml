@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #091935;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.UserLoginController">
+   <children>
+      <Button fx:id="logoutButton" focusTraversable="false" layoutX="143.0" layoutY="493.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #1971e5; -fx-background-radius: 20; -fx-border-radius: 15; -fx-border-width: 3; -fx-border-color: #1971e5; -fx-opacity: 0.9;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="548.0" layoutY="50.0" opacity="0.9" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 18;">
+         <children>
+            <Button focusTraversable="false" layoutX="36.0" layoutY="130.0" mnemonicParsing="false" onAction="#depositMoney" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Deposit Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="36.0" layoutY="230.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Withdraw Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="36.0" layoutY="330.0" mnemonicParsing="false" onAction="#checkBalance" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Check Balance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="315.0" layoutY="130.0" mnemonicParsing="false" onAction="#changePass" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="315.0" layoutY="230.0" mnemonicParsing="false" onAction="#transfer" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Transfer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button focusTraversable="false" layoutX="315.0" layoutY="330.0" mnemonicParsing="false" onAction="#accountInfo" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Information" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="requestB" focusTraversable="false" layoutX="175.0" layoutY="406.0" mnemonicParsing="false" onAction="#requestNewAccount" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 2; -fx-border-radius: 16;" text="Request Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="100.0" layoutY="28.0" opacity="0.9" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+               <children>
+                  <Text fill="WHITE" layoutX="48.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select an option" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tahoma" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="50.0" opacity="0.9" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <Text fill="WHITE" layoutX="107.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome User" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="139.0" opacity="0.9" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <Text fx:id="usernameT" fill="WHITE" layoutX="14.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="dateT" fill="WHITE" layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="accountsT" fill="WHITE" layoutX="90.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

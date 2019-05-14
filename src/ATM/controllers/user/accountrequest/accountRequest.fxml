@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #091935;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.accountrequest.AccountRequestController">
+   <children>
+      <Pane layoutX="100.0" layoutY="25.0" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20; -fx-opacity: 0.9;" />
+      <Text fill="WHITE" layoutX="175.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Request" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Pane layoutX="100.0" layoutY="121.0" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20; -fx-opacity: 0.9;">
+         <children>
+            <Label fx:id="mssg" layoutX="23.0" layoutY="210.0" prefHeight="40.0" prefWidth="354.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="savingsButton" focusTraversable="false" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#savingsSelection" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Savings Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="creditCardButton" focusTraversable="false" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#creditCardSelection" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Credit Card" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="overseasButton" focusTraversable="false" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#overseasSelection" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Overseas Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="chequingButton" focusTraversable="false" layoutX="210.0" layoutY="60.0" mnemonicParsing="false" onAction="#chequingSelection" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Chequing Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="lineOfCreditButton" focusTraversable="false" layoutX="210.0" layoutY="110.0" mnemonicParsing="false" onAction="#lineOfCreditSelection" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Line Of Credit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="exitButton" focusTraversable="false" layoutX="210.0" layoutY="160.0" mnemonicParsing="false" onAction="#returnButton" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-radius: 16; -fx-border-width: 2; -fx-border-color: #1971e5;" text="Leave" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="378.0" text="Select the type of account you would like to create:" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

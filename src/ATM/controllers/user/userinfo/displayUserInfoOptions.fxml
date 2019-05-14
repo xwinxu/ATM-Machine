@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #091935;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.userinfo.UserInfoController">
+   <children>
+      <Pane layoutX="100.0" layoutY="125.0" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 2; -fx-border-radius: 20; -fx-opacity: 0.9;">
+         <children>
+            <Label fx:id="mssg1" layoutX="40.0" layoutY="220.0" prefHeight="40.0" prefWidth="251.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="accountSummaryButton" focusTraversable="false" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onAction="#accountSummary" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Account Summary" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="recentTransactionsButton" focusTraversable="false" layoutX="107.0" layoutY="110.0" mnemonicParsing="false" onAction="#recentTransactions" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Recent Transactions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="creationDateButton" focusTraversable="false" layoutX="107.0" layoutY="60.0" mnemonicParsing="false" onAction="#creationDate" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Account Creation Date" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="netTotalButton" focusTraversable="false" layoutX="107.0" layoutY="158.0" mnemonicParsing="false" onAction="#netTotal" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-radius: 16; -fx-border-width: 2;" text="Net Total" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="exitButton" focusTraversable="false" layoutX="255.0" layoutY="205.0" mnemonicParsing="false" onAction="#returnButton" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #1971e5; -fx-background-radius: 20;" text="Return" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="100.0" layoutY="25.0" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20; -fx-opacity: 0.9;">
+         <children>
+            <Text fill="WHITE" layoutX="88.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Information" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>

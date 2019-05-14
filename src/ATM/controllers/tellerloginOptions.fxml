@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #091935;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.teller.TellerEmployeeOptionsController">
+   <children>
+      <Button fx:id="logoutButton" focusTraversable="false" layoutX="143.0" layoutY="493.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #1971e5; -fx-background-radius: 20; -fx-border-radius: 15; -fx-border-width: 3; -fx-border-color: #1971e5; -fx-opacity: 0.9;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="548.0" layoutY="50.0" opacity="0.9" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 18;">
+         <children>
+            <Button fx:id="promotionRequestButton" focusTraversable="false" layoutX="36.0" layoutY="230.0" mnemonicParsing="false" onAction="#promotionRequest" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44#39b03b; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 2; -fx-border-radius: 20;" text="Promotion Request" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="registerAccButton" focusTraversable="false" layoutX="315.0" layoutY="230.0" mnemonicParsing="false" onAction="#registerAccount" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 2; -fx-border-radius: 20;" text="Register Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="100.0" layoutY="51.0" opacity="0.9" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+               <children>
+                  <Text fill="WHITE" layoutX="48.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select an option" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tahoma" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="50.0" opacity="0.9" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <Text fill="WHITE" layoutX="107.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Teller" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="139.0" opacity="0.9" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #031c44; -fx-background-radius: 20; -fx-border-color: #1971e5; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <Text fx:id="usernameT" fill="WHITE" layoutX="14.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teller:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="dateT" fill="WHITE" layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="accountsT" fill="#1971e5" layoutX="131.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
